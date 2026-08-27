@@ -1,0 +1,6 @@
+rule_name,rule_type,rule_description,source_name,column_name,rule_definition,severity,enabled,is_auto_generated
+sourceone-id-not-null,null_check,Member id must be populated,SourceOne,id,"{""operator"":""NOT_NULL""}",critical,true,false
+sourceone-name-not-null,null_check,Member name must be populated,SourceOne,name,"{""operator"":""NOT_NULL""}",high,true,false
+sourceone-dob-not-null,null_check,Date of birth must be populated,SourceOne,dob,"{""operator"":""NOT_NULL""}",high,true,false
+sourceone-dob-date,type_check,Date of birth must be a valid date,SourceOne,dob,"{""operator"":""DATE_FORMAT"",""format"":""yyyy-MM-dd""}",high,true,false
+sourceone-contact-not-null,null_check,Contact details must be populated,SourceOne,contact_details,"{""operator"":""NOT_NULL""}",medium,true,false
