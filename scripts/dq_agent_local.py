@@ -443,12 +443,12 @@ def main():
     
     try:
         agent.process_file(file_name, source_name)
-        print(f"\n✓ Processing completed successfully!")
+        print(f"\n[SUCCESS] Processing completed successfully!")
         print(f"  - Check 'clean' folder for clean data")
         print(f"  - Check 'quarantine' folder for bad records")
         print(f"  - Check 'logs' folder for detailed logs")
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n[ERROR] {e}")
         logging.exception("Fatal error during processing")
         sys.exit(1)
 
